@@ -6,14 +6,12 @@ let v = new Vue({
   data: {
     entries: []
   },
-  methods: {
-    fetchEntries: function() {
-      var url:string "https://qiita.com/api/v2/users/shiimaxx/items";
-      var res = request
-        .get(url)
-        .then(function(res) {
-          return res.body;
-        })
-    }
+  created: function() {
+    var url:string = "https://qiita.com/api/v2/users/shiimaxx/items";
+    request
+      .get(url)
+      .then((res) => {
+        this.entries = JSON.parse(res.text);
+      })
   }
 })
