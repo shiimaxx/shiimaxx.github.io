@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>shiimaxx.com</title>
+  <link href="./css/main.css" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
-  <div id="app"></app>
-  <i class="fab fa-twitter-square fa-5x"></i>
+  <div id="app">
+    <ul>
+      <li v-for="entry in entries">
+        <a v-bind:href="entry.url">{{ entry.title }}</a>
+      </li>
+    </ul>
+  </div>
+  <i class="icon fa-twitter-square fa-5x"/i>
   <i class="fab fa-github-square fa-5x"></i>
   <i class="fab fa-facebook-square fa-5x"></i>
 </body>
+<script src="./dist/build.js"></script>
 </html>
