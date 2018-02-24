@@ -27,3 +27,8 @@
 .fa-facebook-square {
     color: #3b5998
 }
+
+#icons li {
+    display: inline;
+    padding: 5px;
+}
