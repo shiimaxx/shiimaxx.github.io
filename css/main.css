@@ -12,6 +12,10 @@
     background-color: #000;
 }
 
+.mdc-toolbar__title {
+    color: #fff;
+}
+
 .fa-github-square {
     color: #000;
 }
