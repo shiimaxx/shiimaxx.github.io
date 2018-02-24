@@ -12,6 +12,14 @@
     background-color: #000;
 }
 
-#icon a {
+.fa-github-square {
     color: #000;
+}
+
+.fa-twitter-square {
+    color: #55acee;
+}
+
+.fa-facebook-square {
+    color: #3b5998
 }
