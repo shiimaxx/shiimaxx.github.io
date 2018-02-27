@@ -1,5 +1,5 @@
 .container {
-    width: 50%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -28,7 +28,15 @@
     color: #3b5998
 }
 
+#icons {
+    margin: 0 5%;
+}
+
 #icons li {
     display: inline;
     padding: 5px;
+}
+
+.mdc-list-item__text {
+    margin: 0 10%;
 }
