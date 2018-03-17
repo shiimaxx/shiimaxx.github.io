@@ -27,7 +27,7 @@
           <span class="mdc-list-item__text">
             <a v-bind:href="entry.url">{{ entry.title }}</a>
             <span class="mdc-list-item__secondary-text">
-              <time v-bind:datetime="entry.created_at">{{ entry.created_at }}</time>
+              <time v-bind:datetime="entry.created_at">{{ entry.created_at | toReadableDate }}</time>
             </span>
           </span>
         </li>

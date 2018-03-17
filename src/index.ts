@@ -13,5 +13,14 @@ let v = new Vue({
       .then((res) => {
         this.entries = JSON.parse(res.text);
       })
+  },
+  filters: {
+    toReadableDate: function(strDate: string) {
+      var date = new Date(strDate);
+      var year = date.getFullYear();
+      var month = ("0"+(date.getMonth() + 1)).slice(-2);
+      var day = ("0"+date.getDate()).slice(-2);
+      return year+"-"+month+"-"+day
+    }
   }
 })
