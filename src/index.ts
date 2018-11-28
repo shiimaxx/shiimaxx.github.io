@@ -7,11 +7,11 @@ let v = new Vue({
     entries: []
   },
   created: function() {
-    var url:string = "https://qiita.com/api/v2/users/shiimaxx/items";
+    var url:string = "https://shiimaxx-com.appspot.com/api/v1/entries";
     request
       .get(url)
       .then((res) => {
-        this.entries = JSON.parse(res.text);
+        this.entries = JSON.parse(res.text).entries;
       })
   },
   filters: {
